@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqeer Abass Ali | Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --ds-primary: #10b981; --ds-dark: #111827; --ds-slate: #4b5563; --ds-bg: #f9fafb; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', 'Segoe UI', sans-serif; }
+        body { background: var(--ds-bg); color: var(--ds-dark); }
+        
+        header { 
+            background: var(--ds-dark); color: white; padding: 120px 20px; text-align: center;
+            border-bottom: 4px solid var(--ds-primary);
+        }
+        header h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; }
+        .ds-tag { color: var(--ds-primary); font-size: 1.1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 3px; }
+
+        .social-links { margin-top: 30px; display: flex; justify-content: center; gap: 25px; }
+        .social-links a { color: #9ca3af; font-size: 1.8rem; transition: 0.3s; }
+        .social-links a:hover { color: var(--ds-primary); transform: translateY(-5px); }
+
+        section { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
+        h2 { font-size: 2.2rem; margin-bottom: 40px; color: var(--ds-dark); display: flex; align-items: center; gap: 15px; }
+        h2::after { content: ''; flex: 1; height: 1px; background: #e5e7eb; }
+
+        /* Tech Stack */
+        .tech-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .tech-card { background: white; padding: 25px; border-radius: 12px; border: 1px solid #f3f4f6; }
+        .tech-card h4 { color: var(--ds-primary); margin-bottom: 10px; }
+
+        /* Project Cards */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .p-card { background: white; padding: 35px; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: 0.3s; border-bottom: 4px solid transparent; }
+        .p-card:hover { transform: translateY(-10px); border-bottom: 4px solid var(--ds-primary); }
+        .p-card h3 { margin-bottom: 15px; }
+        .p-card p { color: var(--ds-slate); margin-bottom: 20px; font-size: 0.95rem; }
+        .label { background: #ecfdf5; color: #065f46; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; }
+
+        /* Contact Area */
+        .contact-cta { background: white; padding: 60px; border-radius: 20px; text-align: center; border: 2px dashed #e5e7eb; }
+        .cta-btn { padding: 14px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; margin: 10px; transition: 0.3s; }
+        .wa-btn { background: #25D366; color: white; }
+        .mail-btn { background: var(--ds-dark); color: white; }
+        .cta-btn:hover { opacity: 0.8; }
+
+        footer { text-align: center; padding: 40px; color: #9ca3af; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="ds-tag">Data Scientist</p>
+        <h1>Faqeer Abass Ali</h1>
+        <p style="max-width: 650px; margin: 20px auto; color: #9ca3af; font-size: 1.1rem;">
+            Solving real-world problems through Data Analysis, Machine Learning, and Predictive Modeling. 
+            Transforming raw data into meaningful business intelligence.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/abbasmangi" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abbas-ali-ali-1559b7362" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:abbasmangi7o@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Data Science Toolkit</h2>
+        <div class="tech-box">
+            <div class="tech-card">
+                <h4>Languages & Tools</h4>
+                <p>Python, NumPy, Pandas, SQL</p>
+            </div>
+            <div class="tech-card">
+                <h4>Machine Learning</h4>
+                <p>Regression, Time Series, Supervised Learning</p>
+            </div>
+            <div class="tech-card">
+                <h4>Visualization</h4>
+                <p>Matplotlib, Seaborn, Streamlit</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Data Projects</h2>
+        <div class="project-grid">
+            <div class="p-card">
+                <div><span class="label">FORECASTING</span><span class="label">PYTHON</span></div>
+                <h3>Stock Market Data Analysis</h3>
+                <p>Analyzing historical price patterns and predicting future trends using regression algorithms on financial time-series data.</p>
+            </div>
+            <div class="p-card">
+                <div><span class="label">ML MODEL</span><span class="label">DATASET</span></div>
+                <h3>Real Estate Valuation AI</h3>
+                <p>Developing predictive models to estimate property prices by analyzing key demographic and structural features.</p>
+            </div>
+            <div class="p-card">
+                <div><span class="label">ANALYTICS</span><span class="label">UI</span></div>
+                <h3>Salary Predictive Engine</h3>
+                <p>An end-to-end data science project predicting salary growth patterns based on industrial experience metrics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact-cta">
+            <h2>Let's Talk Data</h2>
+            <p>Aapke paas data hai aur usme se insights nikaalni hain? Let's connect.</p>
+            <div style="margin-top: 25px;">
+                <a href="https://wa.me/923486478880" class="cta-btn wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+                <a href="mailto:abbasmangi7o@gmail.com" class="cta-btn mail-btn"><i class="fas fa-envelope"></i> Contact via Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Faqeer Abass Ali | Data Scientist | Built with Passion</p>
+    </footer>
+
+</body>
+</html>
